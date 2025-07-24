@@ -1,0 +1,14 @@
+@import "tailwindcss";
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+:root {
+  --Linear-gradient-active-input-border: hsl(249, 99%, 64%) to
+    hsl(278, 94%, 30%);
+  --color-Red-400-input-errors: hsl(0, 100%, 66%);
+  --color-White: hsl(0, 100%, 100%);
+  --color-Gray-200: hsl(270, 3%, 87%);
+  --color-Gray-400: hsl(212, 12%, 71%);
+  --color-Purple-950: hsl(278, 68%, 11%);
+}
