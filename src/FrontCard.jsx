@@ -26,11 +26,11 @@ export default function FrontCard({ name, number, month, year }) {
       <article className="absolute inset-0 flex flex-col justify-between px-4 py-5 z-10">
         <img src={logo} alt="logo" className="w-13 md:w-24 pb-2 md:pb-6" />
 
-        <section className="flex flex-col md:gap-6 gap-3">
-          <p className="text-[var(--color-White)] font-medium md:text-3xl text-[1.3rem] flex justify-between tracking-widest">
+        <section className="flex flex-col md:gap-6 gap-2">
+          <p className="text-[var(--color-White)] font-medium md:text-3xl mt-4 text-[1.01rem] flex justify-between tracking-widest">
             <span>{formatCardNumber(number)}</span>
           </p>
-          <div className="flex justify-between text-[var(--color-White)] uppercase text-xs md:text-sm tracking-wider">
+          <div className="flex justify-between text-[var(--color-White)] mt-1 uppercase text-xs md:text-sm tracking-wider">
             <p>{name || "Jane Appleseed"}</p>
             <span className="text-[var(--color-Gray-200)] text-sm">
               {month || "00"}/{year || "00"}

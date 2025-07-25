@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import SuccessCard from "./SuccessCard";
+import SuccessCard from "./SuccessCard.jsx";
 
 export default function FormCard({
   cardData,
@@ -137,10 +137,13 @@ export default function FormCard({
 
   // Render the form
   return (
-    <main className="md:max-w-[38%] mx-auto">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <main className="md:max-w-[38%] mx-auto my-auto pt-8 md:pt-0 flex items-center justify-center flex-col gap-4 p-1">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col justify-center items-center gap-4 "
+      >
         {/* Name */}
-        <div className="flex flex-col gap-1">
+        <div className="w-full flex flex-col gap-1">
           <label
             htmlFor="name"
             className="text-[var(--color-Purple-950)] uppercase text-sm"
@@ -154,7 +157,7 @@ export default function FormCard({
             value={cardData.name}
             onChange={(e) => handleInputChange("name", e.target.value)}
             placeholder="e.g. Jane Appleseed"
-            className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none ${
+            className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none focus:border-[var(--color-Purple-950)] cursor-pointer ${
               nameError
                 ? "border-1 border-[var(--color-Red-400-input-errors)]"
                 : "border border-[var(--color-Gray-200)]"
@@ -168,7 +171,7 @@ export default function FormCard({
         </div>
 
         {/* Card Number */}
-        <div className="flex flex-col gap-1">
+        <div className="w-full flex flex-col gap-1">
           <label
             htmlFor="number"
             className="text-[var(--color-Purple-950)] uppercase text-sm"
@@ -183,7 +186,7 @@ export default function FormCard({
             value={cardData.number}
             onChange={(e) => handleInputChange("number", e.target.value)}
             placeholder="e.g. 1234 5678 9123 0000"
-            className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none ${
+            className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none focus:border-[var(--color-Purple-950)] cursor-pointer ${
               numberError
                 ? "border-1 border-[var(--color-Red-400-input-errors)]"
                 : "border border-[var(--color-Gray-200)]"
@@ -216,7 +219,7 @@ export default function FormCard({
                   value={cardData.month}
                   onChange={(e) => handleInputChange("month", e.target.value)}
                   placeholder="MM"
-                  className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none ${
+                  className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none focus:border-[var(--color-Purple-950)] cursor-pointer ${
                     monthError
                       ? "border-1 border-[var(--color-Red-400-input-errors)]"
                       : "border border-[var(--color-Gray-200)]"
@@ -238,7 +241,7 @@ export default function FormCard({
                   value={cardData.year}
                   onChange={(e) => handleInputChange("year", e.target.value)}
                   placeholder="YY"
-                  className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none ${
+                  className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none focus:border-[var(--color-Purple-950)] cursor-pointer ${
                     yearError
                       ? "border-1 border-[var(--color-Red-400-input-errors)]"
                       : "border border-[var(--color-Gray-200)]"
@@ -264,7 +267,7 @@ export default function FormCard({
               value={cardData.cvc}
               onChange={(e) => handleInputChange("cvc", e.target.value)}
               placeholder="e.g. 123"
-              className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none ${
+              className={`w-full p-2 rounded-md placeholder:text-[var(--color-Gray-200)] focus:outline-none focus:border-[var(--color-Purple-950)] cursor-pointer ${
                 cvcError
                   ? "border-1 border-[var(--color-Red-400-input-errors)]"
                   : "border border-[var(--color-Gray-200)]"

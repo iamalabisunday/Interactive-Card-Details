@@ -5,7 +5,7 @@ export default function SuccessCard({ onContinue }) {
     <main className="md:max-w-[38%] mx-auto">
       <div className="flex flex-col items-center gap-8 text-center">
         {/* Success Icon */}
-        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+        <div className="w-20 h-20 rounded-full bg-[image:var(--Linear-gradient-active-input-border)] bg-cover bg-no-repeat bg-center text-[var(--color-White)] flex items-center justify-center">
           <svg
             className="w-10 h-10 text-white"
             fill="none"

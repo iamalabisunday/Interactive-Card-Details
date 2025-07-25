@@ -39,9 +39,9 @@ export default function InteractiveCards() {
       {/* Mobile: Card Display */}
       <MobileCards cardData={cardData} />
       {/* Background and Form */}
-      <main className="w-full h-screen m-auto flex flex-col md:flex-row justify-center md:items-center">
-        <section className="md:w-[50%] md:h-screen h-full w-full bg-cover md:bg-contain bg-no-repeat md:bg-[url('./images/bg-main-desktop.png')] bg-[url('./images/bg-main-mobile.png')]"></section>
-        <section className="w-[90%] m-auto md:w-[70%] mb-6 mt-18 md:mt-0">
+      <main className="w-full h-screen m-auto flex flex-col md:flex-row justify-center items-cente">
+        <section className="md:w-[50%] md:h-screen h-[35%] flex bg-cover md:bg-contain bg-no-repeat md:bg-[url('./images/bg-main-desktop.png')] bg-[url('./images/bg-main-mobile.png')] w-[375px] b-[14]"></section>
+        <section className="w-[90%] m-auto md:w-[70%] flex">
           {/* Form Card Section */}
           <FormCard
             cardData={cardData}
