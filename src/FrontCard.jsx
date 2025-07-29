@@ -23,11 +23,11 @@ export default function FrontCard({ name, number, month, year }) {
       />
 
       {/* Overlay Content */}
-      <article className="absolute inset-0 flex flex-col justify-between px-4 py-5 z-10">
+      <article className="absolute inset-0 flex flex-col justify-between px-3 py-3 z-10 ">
         <img src={logo} alt="logo" className="w-13 md:w-24 pb-2 md:pb-6" />
 
-        <section className="flex flex-col md:gap-6 gap-2">
-          <p className="text-[var(--color-White)] font-medium md:text-3xl mt-4 text-[0.9rem] flex justify-between tracking-widest   whitespace-nowrap">
+        <section className="flex flex-col md:gap-6 gap-1">
+          <p className="text-[var(--color-White)] font-medium md:text-3xl mt-4 text-[0.9rem] flex justify-between tracking-widest whitespace-nowrap">
             <span>{formatCardNumber(number)}</span>
           </p>
           <div className="flex justify-between text-[var(--color-White)] mt-1 uppercase text-xs md:text-sm tracking-wider text-[0.6rem] ">
