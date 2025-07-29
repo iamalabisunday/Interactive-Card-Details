@@ -12,7 +12,7 @@ export default function BackCard({ cvc }) {
 
       {/* CVC Number Overlay */}
       <div className="absolute md:top-[45%] top-[43%] right-[12%] z-10">
-        <p className="text-[var(--color-Gray-200)] text-sm md:text-base">
+        <p className="text-[var(--color-Gray-200)] md:text-base text-[0.7rem]">
           {" "}
           {cvc || "000"}
         </p>

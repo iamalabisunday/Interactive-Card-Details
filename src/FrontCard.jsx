@@ -27,12 +27,12 @@ export default function FrontCard({ name, number, month, year }) {
         <img src={logo} alt="logo" className="w-13 md:w-24 pb-2 md:pb-6" />
 
         <section className="flex flex-col md:gap-6 gap-2">
-          <p className="text-[var(--color-White)] font-medium md:text-3xl mt-4 text-[1.01rem] flex justify-between tracking-widest">
+          <p className="text-[var(--color-White)] font-medium md:text-3xl mt-4 text-[0.9rem] flex justify-between tracking-widest   whitespace-nowrap">
             <span>{formatCardNumber(number)}</span>
           </p>
-          <div className="flex justify-between text-[var(--color-White)] mt-1 uppercase text-xs md:text-sm tracking-wider">
+          <div className="flex justify-between text-[var(--color-White)] mt-1 uppercase text-xs md:text-sm tracking-wider text-[0.6rem] ">
             <p>{name || "Jane Appleseed"}</p>
-            <span className="text-[var(--color-Gray-200)] text-sm">
+            <span className="text-[var(--color-Gray-200)] text-[0.6rem]">
               {month || "00"}/{year || "00"}
             </span>
           </div>
